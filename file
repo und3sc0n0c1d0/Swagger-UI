@@ -1,4 +1,9 @@
 {
-    "url": "https://raw.githubusercontent.com/und3sc0n0c1d0/Swagger-UI/main/file2",
-    "urls": []
+    "url": "https://raw.githubusercontent.com/und3sc0n0c1d0/Swagger-UI/main/file",
+    "urls": [
+        {
+            "url": "https://raw.githubusercontent.com/und3sc0n0c1d0/Swagger-UI/main/file",
+            "name": "Foo"
+        }
+    ]
 }
